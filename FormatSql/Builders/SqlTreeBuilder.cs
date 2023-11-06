@@ -43,8 +43,8 @@ public static class SqlTreeBuilder
                     throw new FormatException( "Muitos parênteses de fechamento" );
                 }
             }
-            //else
-                //tree.nodes.Enqueue( new StringNode( line ) );
+            else
+                tree.nodes.Enqueue( new StringNode( line ) );
         }
 
         if ( trees.Count > 0 )

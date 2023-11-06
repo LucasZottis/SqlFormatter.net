@@ -19,4 +19,11 @@ public class StringNode : ISQLTreeNode
             return value;
         }
     }
+
+    public StringNode( string value )
+    {
+        Value = value;
+    }
+
+    public StringNode() : this( string.Empty ) { }
 }

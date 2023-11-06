@@ -1,4 +1,5 @@
-﻿using SqlFormatter.Models;
+﻿using SqlFormatter.Builders;
+using SqlFormatter.Models;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -125,9 +126,9 @@ public static class Formatter
 
     public static string Format( string sql )
     {
-        SqlTree sqlTree = Parse( sql );
+        var sqlTree = SqlTreeBuilder.Build( sql );
+        var sqlBuilder = new StringBuilder();
 
-        StringBuilder sqlBuilder = new StringBuilder();
         sqlTree.FormatSql( sqlBuilder, string.Empty );
         sqlBuilder.Replace( "' '", "''" );
 
