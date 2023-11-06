@@ -2,7 +2,7 @@
 
 namespace SqlFormatter.Helpers;
 
-public static class QueryHelper
+internal static class QueryHelper
 {
     private static string[] _schemes = new string[] {
             "(?<Comment>\\-\\-.*$)",
@@ -28,7 +28,7 @@ public static class QueryHelper
 
     private static string _pattern = string.Join( "|", _schemes );
 
-    public static string PrepareQuery( string query )
+    internal static string PrepareQuery( string query )
     {
         var sql = Regex.Replace( query, $"({_pattern})", new MatchEvaluator( delegate ( Match match )
         {

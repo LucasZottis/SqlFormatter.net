@@ -12,18 +12,12 @@ internal class ParenthesisNode : ISQLTreeNode
         set { tree = value; }
     }
 
-    public object Content
-    {
-        get
-        {
-            return tree;
-        }
-    }
+    public object Content => tree;
 
-    public ParenthesisNode( SqlTree sqlTree )
+    internal ParenthesisNode( SqlTree sqlTree )
     {
         Tree = sqlTree;
     }
 
-    public ParenthesisNode() : this( new SqlTree() ) { }
+    internal ParenthesisNode() : this( new SqlTree() ) { }
 }

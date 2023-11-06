@@ -1,11 +1,11 @@
 ﻿namespace SqlFormatter.Models;
 
-public class SqlKeyWord
+internal class SqlKeyWord
 {
-    public string KeyWord { get; private set; }
-    public Formater Formater { get; private set; }
-    public bool LineFeedAfter { get; private set; }
-    public string InsertAfter { get; private set; }
+    internal string KeyWord { get; private set; }
+    internal Formater Formater { get; private set; }
+    internal bool LineFeedAfter { get; private set; }
+    internal string InsertAfter { get; private set; }
 
     internal SqlKeyWord( string KeyWord, Formater Formater, bool LineFeedAfter ) :
         this( KeyWord, Formater, LineFeedAfter, string.Empty ) { }

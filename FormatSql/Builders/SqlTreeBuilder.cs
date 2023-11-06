@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace SqlFormatter.Builders;
 
-public static class SqlTreeBuilder
+internal static class SqlTreeBuilder
 {
     /// <summary>
     /// Preparação da formatação
@@ -53,7 +53,7 @@ public static class SqlTreeBuilder
         return tree;
     }
 
-    public static SqlTree Build( string sql )
+    internal static SqlTree Build( string sql )
     {
         return Parse( sql );
     }

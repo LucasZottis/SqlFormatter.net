@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace SqlFormatter;
 
-public class SqlTree
+internal class SqlTree
 {
     Dictionary<string, SqlKeyWord> structureKeyWords;
     bool inBetween = false;

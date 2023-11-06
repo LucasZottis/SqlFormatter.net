@@ -1,7 +1,5 @@
 ﻿using SqlFormatter.Builders;
-using SqlFormatter.Models;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace SqlFormatter;
 
