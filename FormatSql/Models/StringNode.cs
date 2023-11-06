@@ -2,7 +2,7 @@
 
 namespace SqlFormatter.Models;
 
-public class StringNode : ISQLTreeNode
+internal class StringNode : ISQLTreeNode
 {
     private string value;
 

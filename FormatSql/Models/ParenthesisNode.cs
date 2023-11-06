@@ -2,7 +2,7 @@
 
 namespace SqlFormatter.Models;
 
-public class ParenthesisNode : ISQLTreeNode
+internal class ParenthesisNode : ISQLTreeNode
 {
     private SqlTree tree;
 
@@ -19,4 +19,11 @@ public class ParenthesisNode : ISQLTreeNode
             return tree;
         }
     }
+
+    public ParenthesisNode( SqlTree sqlTree )
+    {
+        Tree = sqlTree;
+    }
+
+    public ParenthesisNode() : this( new SqlTree() ) { }
 }

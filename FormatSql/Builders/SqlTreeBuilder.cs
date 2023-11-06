@@ -26,9 +26,9 @@ public static class SqlTreeBuilder
                 continue;
             else if ( line == "(" )
             {
-                trees.Push( tree );
                 var newTree = new ParenthesisNode();
-                newTree.Tree = new SqlTree();
+
+                trees.Push( tree );
                 tree.nodes.Enqueue( newTree );
                 tree = newTree.Tree;
             }
