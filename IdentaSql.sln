@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentaSql", "IdentaSql\IdentaSql.csproj", "{2E4E1552-9550-4460-98AC-A2AABAC41779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlFormatterTests", "IdentaSql\SqlFormatterTests.csproj", "{2E4E1552-9550-4460-98AC-A2AABAC41779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlFormatter", "FormatSql\SqlFormatter.csproj", "{8BDF2522-2B49-48D4-9F64-B3B361F8CAB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlFormatter", "FormatSql\SqlFormatter.csproj", "{8BDF2522-2B49-48D4-9F64-B3B361F8CAB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
