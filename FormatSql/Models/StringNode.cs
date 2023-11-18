@@ -6,24 +6,18 @@ internal class StringNode : ISQLTreeNode
 {
     private string value;
 
-    public string Value
+    internal string Value
     {
         get { return value; }
         set { this.value = value; }
     }
 
-    public object Content
-    {
-        get
-        {
-            return value;
-        }
-    }
+    public object Content => value;
 
-    public StringNode( string value )
+    internal StringNode( string value )
     {
         Value = value;
     }
 
-    public StringNode() : this( string.Empty ) { }
+    internal StringNode() : this( string.Empty ) { }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SqlFormatter.Helpers;
 
-public static class FormatterHelper
+internal static class FormatterHelper
 {
 
 }

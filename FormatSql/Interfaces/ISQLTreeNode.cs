@@ -1,6 +1,6 @@
 ﻿namespace SqlFormatter.Interfaces;
 
-public interface ISQLTreeNode
+internal interface ISQLTreeNode
 {
-    object Content { get; }
+    internal object Content { get; }
 }
