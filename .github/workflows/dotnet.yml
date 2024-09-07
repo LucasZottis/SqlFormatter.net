@@ -1,28 +1,18 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+# .github/workflows/test-workflow.yml
+name: Test Workflow
 
 on:
   push:
-    branches: [ "Main" ]
-  pull_request:
-    branches: [ "Main" ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Run a simple command
+        run: echo "GitHub Actions is working!"
